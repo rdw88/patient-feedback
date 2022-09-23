@@ -1,0 +1,10 @@
+[
+  {
+    "model": "api.patient",
+    "pk": 1,
+    "fields": {
+      "first_name": "Tendo",
+      "last_name": "Tenderson"
+    }
+  }
+]

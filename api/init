@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Fixes a docker DNS issue where connecting to other containers
+# on the docker network causes an intermittent 5 second network delay.
+# See https://github.com/kubernetes/kubernetes/issues/56903
+echo "options single-request-reopen" >> /etc/resolv.conf
+
+# Run any outstanding database migrations
+python manage.py migrate
+
+# Load metadata
+python manage.py loaddata api/fixtures/*.json
+
+# Start nginx
+chown -R nginx:nginx logs/
+service nginx start
+uwsgi --ini /patient_feedback/uwsgi_conf.ini --py-autoreload=1 --honour-stdin

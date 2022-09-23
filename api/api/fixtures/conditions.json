@@ -1,0 +1,10 @@
+[
+  {
+    "model": "api.condition",
+    "pk": 1,
+    "fields": {
+      "code": "E10-E14.9",
+      "name": "Diabetes without complications"
+    }
+  }
+]

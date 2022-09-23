@@ -1,0 +1,11 @@
+[
+  {
+    "model": "api.diagnosis",
+    "pk": 1,
+    "fields": {
+      "discovered_during": 1,
+      "condition": 1,
+      "status": 1
+    }
+  }
+]

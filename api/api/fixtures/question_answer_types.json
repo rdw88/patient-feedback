@@ -1,0 +1,23 @@
+[
+  {
+    "model": "api.answertype",
+    "pk": 1,
+    "fields": {
+      "name": "text"
+    }
+  },
+  {
+    "model": "api.answertype",
+    "pk": 2,
+    "fields": {
+      "name": "yesno"
+    }
+  },
+  {
+    "model": "api.answertype",
+    "pk": 3,
+    "fields": {
+      "name": "rating"
+    }
+  }
+]

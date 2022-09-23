@@ -1,0 +1,10 @@
+[
+  {
+    "model": "api.diagnosisstatus",
+    "pk": 1,
+    "fields": {
+      "code": "final",
+      "name": "Final"
+    }
+  }
+]

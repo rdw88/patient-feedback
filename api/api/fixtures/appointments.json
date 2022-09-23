@@ -1,0 +1,14 @@
+[
+  {
+    "model": "api.appointment",
+    "pk": 1,
+    "fields": {
+      "type": 1,
+      "patient": 1,
+      "doctor": 1,
+      "status": 2,
+      "start_date": "2021-04-02T18:30:00Z",
+      "end_date": "2021-04-02T19:00:00Z"
+    }
+  }
+]

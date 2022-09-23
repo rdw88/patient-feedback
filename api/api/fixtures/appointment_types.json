@@ -1,0 +1,9 @@
+[
+  {
+    "model": "api.appointmenttype",
+    "pk": 1,
+    "fields": {
+      "name": "Endocrinologist visit"
+    }
+  }
+]

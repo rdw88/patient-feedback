@@ -1,0 +1,35 @@
+[
+  {
+    "model": "api.question",
+    "pk": 1,
+    "fields": {
+      "questionnaire": 1,
+      "title": "Doctor Recommendation",
+      "body": "Hi [Patient First Name], on a scale of 1-10, would you recommend Dr [Doctor Last Name] to a friend or family member? 1 = Would not recommend, 10 = Would strongly recommend",
+      "order": 1,
+      "type": 3
+    }
+  },
+  {
+    "model": "api.question",
+    "pk": 2,
+    "fields": {
+      "questionnaire": 1,
+      "title": "Diagnosis",
+      "body": "Thank you. You were diagnosed with [Diagnosis]. Did Dr [Doctor Last Name] explain how to manage this diagnosis in a way you could understand?",
+      "order": 2,
+      "type": 2
+    }
+  },
+  {
+    "model": "api.question",
+    "pk": 3,
+    "fields": {
+      "questionnaire": 1,
+      "title": "Feedback",
+      "body": "We appreciate the feedback, one last question: how do you feel about being diagnosed with [Diagnosis]?",
+      "order": 3,
+      "type": 1
+    }
+  }
+]

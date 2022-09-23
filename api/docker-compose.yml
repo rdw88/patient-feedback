@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:13.0
+    container_name: db
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - db:/var/lib/postgresql/data
+
+  api:
+    image: rwise88/patient-feedback
+    container_name: patient_feedback
+    environment:
+      - POSTGRES_DB=db
+      - DEBUG=1
+    volumes:
+      - ${PWD}/patientfeedback:/patient_feedback/patientfeedback
+      - ${PWD}/api:/patient_feedback/api
+    stdin_open: true
+    tty: true
+    ports:
+      - "443:443"
+      - "80:80"
+    links:
+      - db
+    depends_on:
+      - db
+
+
+volumes:
+  db:
+

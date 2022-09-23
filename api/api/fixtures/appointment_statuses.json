@@ -1,0 +1,18 @@
+[
+  {
+    "model": "api.appointmentstatus",
+    "pk": 1,
+    "fields": {
+      "code": "confirmed",
+      "name": "Confirmed"
+    }
+  },
+  {
+    "model": "api.appointmentstatus",
+    "pk": 2,
+    "fields": {
+      "code": "finished",
+      "name": "Finished"
+    }
+  }
+]
